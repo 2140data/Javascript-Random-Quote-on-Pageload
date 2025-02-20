@@ -7,14 +7,13 @@ A simple, customizable Javascript snippet to display one (1) random quote when a
 <b>How to use</b><br/>
 <ol>
 <li>Open the 'Example.html' file</li>
-<li>Copy and paste the Javascript into your HTML.<br/>TIP: Copy everything between the COPY THIS SCRIPT tags.</li>
-<li>Edit the quote text as needed.<br/>TIP: Add '\' as an escape character, if necessary.</li>
+<li>Copy/paste and edit the Javascript into your HTML.</li>
+<li>Edit the quote text as needed.</li>
 </ol>
 
 <b>OR - Use only the Javascript with NO HTML</b>
 <ol>
 <li>Open the 'rquote.js' file</li>
-<li>Edit the quote text as needed.<br/>TIP: Add '\' as an escape character, if necessary.</li>
-<li>Alternate Option: Save the rquote.js file and call it with your HTML.</li>
+<li>Edit the quote text as needed.</li>
 </ol>
 

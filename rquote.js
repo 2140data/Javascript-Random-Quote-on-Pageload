@@ -1,20 +1,35 @@
-//Javascript document
+const quotes = [
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.',
+    'This is where you put your quote text.'
+];
 
-//Store a group of quotes in a variable called 'i'
-var i=new Array();
+function displayRandomQuote() {
+    const quoteContainer = document.getElementById('quote-container');
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteContainer.textContent = quotes[randomIndex];
+}
 
-//Edit each quote text below. Add/Delete additional quotes as needed.
-i[0]='0 - This is where you put your quote text.';
-i[1]='1 - This is where you put your quote text.';
-i[2]='2 - This is where you put your quote text.';
-i[3]='3 - This is where you put your quote text.';
-i[4]='4 - This is where you put your quote text.';
-i[5]='5 - This is where you put your quote text.';
-i[6]='6 - This is where you put your quote text.';
-i[7]='7 - This is where you put your quote text.';
-i[8]='8 - This is where you put your quote text.';
-i[9]='9 - This is where you put your quote text.';
+// Display quote when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', displayRandomQuote);
 
-//Display a random quote from the group
-var x=Math.floor(Math.random()*(i.length));
-document.write(i[x]);
+// To use it:
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Random Quote Generator</title>
+// </head>
+// <body>
+//     <div id="quote-container"></div>
+//     <script src="quotes.js"></script>
+// </body>
+// </html>
